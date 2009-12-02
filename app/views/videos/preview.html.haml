@@ -1,0 +1,5 @@
+- form_for :video, @video, :url => videos_url do |form|
+  = form.hidden_field :url
+  = form.submit 'Add'
+  
+= @video.url_html

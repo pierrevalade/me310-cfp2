@@ -1,0 +1,4 @@
+- form_for @video, :url => preview_videos_url do |form|
+  youtube url
+  = form.text_field :url
+  = form.submit 'Preview'

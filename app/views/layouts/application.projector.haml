@@ -1,0 +1,13 @@
+%html
+  %head
+    %title= 'Me310-CFP2'
+  %body
+    %h1= link_to "Home", root_url
+    <hr />
+    = yield
+      
+    <hr />
+    - if request.format.projector?
+      = button_to "Normal version", formats_url(:id => :normal)
+    - else
+      = button_to "Projector version", formats_url(:id => :projector)

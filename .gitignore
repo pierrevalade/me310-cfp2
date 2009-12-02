@@ -1,0 +1,8 @@
+.DS_Store
+log/*
+log/*.pid
+tmp/**/*
+db/sphinx/*
+config/development.sphinx.conf
+public/system
+public/sitemap*

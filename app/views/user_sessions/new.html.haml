@@ -1,0 +1,24 @@
+%h2= link_to "No account yet ? Sign up now!", new_user_url
+
+- form_for @user_session, :url => user_session_path do |form|
+
+  = form.error_messages
+  
+  = form.label :email
+  <br />
+  = form.text_field :email
+  <br />
+  
+  <br />
+  = form.label :password
+  <br />
+  = form.password_field :password
+  <br />
+  
+  <br />
+  = form.check_box :remember_me
+  = form.label :remember_me
+  <br />
+  
+  <br />
+  = form.submit "Login"
